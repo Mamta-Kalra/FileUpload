@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FileDB" Class="FileDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LAPTOP-8SDFL799\SQLEXPRESS;Initial Catalog=FileDB;User ID=sa;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="FileDBConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.Link_IsValid" Method="Link_IsValid">
+    <Parameter Name="Guid" Parameter="guid" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="Status" Parameter="status" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Register_Insert" Method="Register_Insert">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Job" Parameter="job" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Mobile" Parameter="mobile" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Resume" Parameter="resume" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="Xth" Parameter="xth" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="XIIth" Parameter="xIIth" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="Graduation" Parameter="graduation" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="AdharCard" Parameter="adharCard" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="PanCard" Parameter="panCard" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="PhotoType" Parameter="photoType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PhotoName" Parameter="photoName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PhotoBinary" Parameter="photoBinary" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="ACNum" Parameter="aCNum" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IFSCCode" Parameter="iFSCCode" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Passbook" Parameter="passbook" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="Count" Parameter="count" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
